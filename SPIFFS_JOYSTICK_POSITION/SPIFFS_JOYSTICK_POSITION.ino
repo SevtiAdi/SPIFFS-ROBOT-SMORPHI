@@ -154,7 +154,7 @@ void processPendingSave() {
 void listAllWaypoints() {
   File file = SPIFFS.open(WAYPOINTS_FILE, "r");
   if (!file) {
-    Serial.println("⚠️ No waypoints file found");
+    Serial.println(" No waypoints file found");
     return;
   }
 
@@ -462,7 +462,7 @@ void processGamePad(ControllerPtr ctl) {
         break;
       
       // case 0x0200:  // Start - Clear all waypoints
-      //   Serial.println("⚠️ Clearing all waypoints in 3 seconds...");
+      //   Serial.println(" Clearing all waypoints in 3 seconds...");
       //   // delay(3000);
       //   // requestClearWaypoints();
       //   clearAllWaypoints();
